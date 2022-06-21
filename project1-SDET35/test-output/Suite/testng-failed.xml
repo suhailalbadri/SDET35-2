@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.crm.createproduct.CreateProductAndVerifyTEST">
+        <methods>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplication"/>
+          <include name="closeTheDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="signoutFromApplication"/>
+          <include name="createProductAndVerifyTEST"/>
+        </methods>
+      </class> <!-- com.crm.createproduct.CreateProductAndVerifyTEST -->
+      <class name="com.crm.createcontact.CreateContactAddOrganizationAndVerifyTEST">
+        <methods>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplication"/>
+          <include name="closeTheDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="signoutFromApplication"/>
+          <include name="createContactAddOrganizationAndVerifyTEST"/>
+        </methods>
+      </class> <!-- com.crm.createcontact.CreateContactAddOrganizationAndVerifyTEST -->
+      <class name="com.crm.createvendor.CreateVendorCreateProductAddVendorAndVerifyTEST">
+        <methods>
+          <include name="launchTheBrowser"/>
+          <include name="createVendorCreateProductAddVendorAndVerifyTEST"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplication"/>
+          <include name="closeTheDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="signoutFromApplication"/>
+        </methods>
+      </class> <!-- com.crm.createvendor.CreateVendorCreateProductAddVendorAndVerifyTEST -->
+      <class name="com.crm.createcontact.CreateContactAndVerifyTEST">
+        <methods>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+          <include name="loginToApplication"/>
+          <include name="createContactAndVerifyTEST"/>
+          <include name="closeTheDB"/>
+          <include name="closeTheBrowser"/>
+          <include name="signoutFromApplication"/>
+        </methods>
+      </class> <!-- com.crm.createcontact.CreateContactAndVerifyTEST -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
