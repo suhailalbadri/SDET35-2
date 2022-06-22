@@ -13,7 +13,7 @@ public class CreateContactAndVerifyTest extends BaseClass{
 	@Test(groups={"smokeTest"})
 	public void createContactAndVerifyTest() throws Throwable {
 		
-		//hello bro
+		//hello bro123
 		
 		//generate random number
 		int randnum = jUtil.getRandomNumber();
