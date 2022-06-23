@@ -37,5 +37,6 @@ public class CreateDocumentAndVerifyTest extends BaseClass{
 		//verification
 		Assert.assertTrue(docTitle.contains(document_name));
 		System.out.println("CreateDocumentAndVerifyTEST is pass");
+		System.out.println("success success success");
 	}
 }
