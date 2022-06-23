@@ -47,7 +47,7 @@ public class CreateNewProductPage extends WebdriverUtility{
 		PageFactory.initElements(driver, this);
 	}
 
-	//utilization
+	//utilization123
 	public WebElement getpName() {
 		return pName;
 	}
