@@ -36,11 +36,11 @@ public class CreateProductAndVerifyTest extends BaseClass{
 		//select product manufacturer
 		createNewProductPage.selectPManufacturer(product_manufacturer);
 		//select product category
-		//createNewProductPage.selectPCategory(product_category);
+		createNewProductPage.selectPCategory(product_category);
 		//Select type of product handler
 		//createNewProductPage.selectPStockHandler();
 		//select product handler
-		createNewProductPage.selectPStockHandlerOption(product_handler);
+		//createNewProductPage.selectPStockHandlerOption(product_handler);
 		//upload product image
 		createNewProductPage.UploadPImage(product_imagepath);
 		//click on save button
