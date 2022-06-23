@@ -1,6 +1,5 @@
 package com.crm.createproduct;
 
-import org.openqa.selenium.Point;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,7 +20,7 @@ public class CreateProductAndVerifyTest extends BaseClass{
 		String product_name = eUtil.getTestDataFromExcel("CreateProduct", 2, 2)+randnum;
 		String product_manufacturer=eUtil.getTestDataFromExcel("CreateProduct", 7, 1);
 		String product_category=eUtil.getTestDataFromExcel("CreateProduct", 6, 2);
-		String product_handler=eUtil.getTestDataFromExcel("CreateProduct", 7, 3);
+		//String product_handler=eUtil.getTestDataFromExcel("CreateProduct", 7, 3);
 		String product_imagepath=eUtil.getTestDataFromExcel("CreateProduct", 2, 4);
 
 		//click on product tab
