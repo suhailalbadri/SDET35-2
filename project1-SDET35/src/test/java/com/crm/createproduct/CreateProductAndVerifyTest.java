@@ -1,5 +1,6 @@
 package com.crm.createproduct;
 
+import org.openqa.selenium.Point;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,9 +36,9 @@ public class CreateProductAndVerifyTest extends BaseClass{
 		//select product manufacturer
 		createNewProductPage.selectPManufacturer(product_manufacturer);
 		//select product category
-		createNewProductPage.selectPCategory(product_category);
+		//createNewProductPage.selectPCategory(product_category);
 		//Select type of product handler
-		createNewProductPage.selectPStockHandler();
+		//createNewProductPage.selectPStockHandler();
 		//select product handler
 		createNewProductPage.selectPStockHandlerOption(product_handler);
 		//upload product image
