@@ -2,43 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-21T17:52:37 IST" name="Default suite" finished-at="2022-06-21T17:52:53 IST" duration-ms="16400">
+  <suite started-at="2022-06-23T13:23:05 IST" name="Default suite" finished-at="2022-06-23T13:23:20 IST" duration-ms="15146">
     <groups>
-      <group name="regressionTest">
-        <method signature="CreateContactAddOrganizationAndVerifyTest.createContactAddOrganizationAndVerifyTest()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" name="createContactAddOrganizationAndVerifyTest" class="com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest"/>
-      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateProductAndVerifyTest.createProductAndVerifyTest()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" name="createProductAndVerifyTest" class="com.crm.createproduct.CreateProductAndVerifyTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2022-06-21T17:52:37 IST" name="Default test" finished-at="2022-06-21T17:52:53 IST" duration-ms="16400">
-      <class name="com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest">
-        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:37 IST" name="dbConfig" finished-at="2022-06-21T17:52:37 IST" duration-ms="5" status="PASS">
+    <test started-at="2022-06-23T13:23:05 IST" name="Default test" finished-at="2022-06-23T13:23:20 IST" duration-ms="15146">
+      <class name="com.crm.createproduct.CreateProductAndVerifyTest">
+        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:05 IST" name="dbConfig" finished-at="2022-06-23T13:23:05 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dbConfig -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:37 IST" name="launchTheBrowser" finished-at="2022-06-21T17:52:41 IST" duration-ms="4001" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:05 IST" name="launchTheBrowser" finished-at="2022-06-23T13:23:09 IST" duration-ms="4112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:41 IST" name="loginToApplication" finished-at="2022-06-21T17:52:43 IST" duration-ms="1784" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:09 IST" name="loginToApplication" finished-at="2022-06-23T13:23:11 IST" duration-ms="1810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="createContactAddOrganizationAndVerifyTest()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:43 IST" name="createContactAddOrganizationAndVerifyTest" finished-at="2022-06-21T17:52:52 IST" duration-ms="8731" status="PASS">
+        <test-method signature="createProductAndVerifyTest()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:11 IST" name="createProductAndVerifyTest" finished-at="2022-06-23T13:23:18 IST" duration-ms="7405" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContactAddOrganizationAndVerifyTest -->
-        <test-method is-config="true" signature="signoutFromApplication()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:52 IST" name="signoutFromApplication" finished-at="2022-06-21T17:52:53 IST" duration-ms="1067" status="PASS">
+        </test-method> <!-- createProductAndVerifyTest -->
+        <test-method is-config="true" signature="signoutFromApplication()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:18 IST" name="signoutFromApplication" finished-at="2022-06-23T13:23:19 IST" duration-ms="1149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signoutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:53 IST" name="closeTheBrowser" finished-at="2022-06-21T17:52:53 IST" duration-ms="795" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:19 IST" name="closeTheBrowser" finished-at="2022-06-23T13:23:20 IST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeTheDB()[pri:0, instance:com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest@c88a337]" started-at="2022-06-21T17:52:53 IST" name="closeTheDB" finished-at="2022-06-21T17:52:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeTheDB()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T13:23:20 IST" name="closeTheDB" finished-at="2022-06-23T13:23:20 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheDB -->
-      </class> <!-- com.crm.createcontact.CreateContactAddOrganizationAndVerifyTest -->
+      </class> <!-- com.crm.createproduct.CreateProductAndVerifyTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
