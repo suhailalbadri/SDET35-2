@@ -23,7 +23,9 @@ public class CreateNewPurchaseOrderPage extends WebdriverUtility{
 	
 	@FindBy(name = "ship_street") private WebElement shipAddressRadBtn;
 	
-	@FindBy(id = "searchIcon1") private WebElement productNameLkUpImg;
+	//@FindBy(id = "searchIcon1") private WebElement productNameLkUpImg;
+	
+	@FindBy(xpath = "//img[@src='themes/images/products.gif']") private WebElement productNameLkUpImg;
 	
 	@FindBy(name = "search_text") private WebElement productNameTxtedit;
 	
@@ -107,12 +109,12 @@ public class CreateNewPurchaseOrderPage extends WebdriverUtility{
 	}
 	
 	public void enterItemNameQtyAndListPrice(WebDriver driver, String proName, String proQty, String proListPrice, String c1Window, String p1Window) {
-		//productNameLkUpImg.click();
-		//switchToWindow(driver, c1Window);
-		//productNameTxtedit.sendKeys(proName);
-		//productNameSearchBtn.click();
-		//productNameSelect.click();
-		//switchToWindow(driver, p1Window);
+		productNameLkUpImg.click();
+		switchToWindow(driver, c1Window);
+		productNameTxtedit.sendKeys(proName);
+		productNameSearchBtn.click();
+		productNameSelect.click();
+		switchToWindow(driver, p1Window);
 		productQtyTxtEdit.sendKeys(proQty);
 		productLstPriceTxtEdit.clear();
 		productLstPriceTxtEdit.sendKeys(proListPrice);
