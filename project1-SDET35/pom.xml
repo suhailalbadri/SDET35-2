@@ -43,7 +43,7 @@
   </dependencies>
   <profiles>
   <profile>
-  <id>ParellelID</id>
+  <id>CrossID</id>
   <build>
   <plugins>
       <plugin>
@@ -52,7 +52,7 @@
         <version>3.0.0-M7</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_ParellelExecution.xml</suiteXmlFile>
+            <suiteXmlFile>testng_CrossBrowserExecution.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
