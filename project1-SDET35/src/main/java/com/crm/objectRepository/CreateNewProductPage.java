@@ -30,7 +30,7 @@ public class CreateNewProductPage extends WebdriverUtility{
 	@FindBy(xpath = "//a[@href='javascript:window.close();']")
 	private WebElement selectDesiredVendor;
 	
-	@FindBy(xpath = "//input[@value='T']")
+	@FindBy(xpath = "//input[@name='assigntype']/../input[2]")
 	private WebElement pStockHandler;
 	
 	@FindBy(name = "assigned_group_id")
