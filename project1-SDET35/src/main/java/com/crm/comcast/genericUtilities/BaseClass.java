@@ -45,9 +45,9 @@ public class BaseClass {
 	public void launchTheBrowser() throws Throwable
 	{
 		String BROW=System.getProperty("browser");
-		String URL=System.getProperty("url");
+		//String URL=System.getProperty("url");
 		//String BROW = fUtil.getPropertyKeyValue("browser");
-		//String URL = fUtil.getPropertyKeyValue("url");
+		String URL = fUtil.getPropertyKeyValue("url");
 
 		if (BROW.equalsIgnoreCase("chrome")) 
 		{
