@@ -2,43 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-23T15:07:50 IST" name="Default suite" finished-at="2022-06-23T15:08:07 IST" duration-ms="16625">
+  <suite started-at="2022-06-23T17:23:54 IST" name="Default suite" finished-at="2022-06-23T17:24:11 IST" duration-ms="16667">
     <groups>
-      <group name="smokeTest">
-        <method signature="CreateProductAndVerifyTest.createProductAndVerifyTest()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" name="createProductAndVerifyTest" class="com.crm.createproduct.CreateProductAndVerifyTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2022-06-23T15:07:50 IST" name="Default test" finished-at="2022-06-23T15:08:07 IST" duration-ms="16625">
-      <class name="com.crm.createproduct.CreateProductAndVerifyTest">
-        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:07:50 IST" name="dbConfig" finished-at="2022-06-23T15:07:50 IST" duration-ms="6" status="PASS">
+    <test started-at="2022-06-23T17:23:54 IST" name="Default test" finished-at="2022-06-23T17:24:11 IST" duration-ms="16667">
+      <class name="com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest">
+        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:23:54 IST" name="dbConfig" finished-at="2022-06-23T17:23:54 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dbConfig -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:07:50 IST" name="launchTheBrowser" finished-at="2022-06-23T15:07:54 IST" duration-ms="3837" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:23:54 IST" name="launchTheBrowser" finished-at="2022-06-23T17:23:57 IST" duration-ms="3541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:07:54 IST" name="loginToApplication" finished-at="2022-06-23T15:07:56 IST" duration-ms="2030" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:23:57 IST" name="loginToApplication" finished-at="2022-06-23T17:23:59 IST" duration-ms="1814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="createProductAndVerifyTest()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:07:56 IST" name="createProductAndVerifyTest" finished-at="2022-06-23T15:08:05 IST" duration-ms="8328" status="PASS">
+        <test-method signature="createPurchaseOrderWithItemQtyListPriceTest()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:23:59 IST" name="createPurchaseOrderWithItemQtyListPriceTest" finished-at="2022-06-23T17:24:09 IST" duration-ms="9597" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createProductAndVerifyTest -->
-        <test-method is-config="true" signature="signoutFromApplication()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:08:05 IST" name="signoutFromApplication" finished-at="2022-06-23T15:08:06 IST" duration-ms="1778" status="PASS">
+        </test-method> <!-- createPurchaseOrderWithItemQtyListPriceTest -->
+        <test-method is-config="true" signature="signoutFromApplication()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:24:09 IST" name="signoutFromApplication" finished-at="2022-06-23T17:24:10 IST" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signoutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:08:06 IST" name="closeTheBrowser" finished-at="2022-06-23T15:08:07 IST" duration-ms="626" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:24:10 IST" name="closeTheBrowser" finished-at="2022-06-23T17:24:11 IST" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeTheDB()[pri:0, instance:com.crm.createproduct.CreateProductAndVerifyTest@c88a337]" started-at="2022-06-23T15:08:07 IST" name="closeTheDB" finished-at="2022-06-23T15:08:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeTheDB()[pri:0, instance:com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest@c88a337]" started-at="2022-06-23T17:24:11 IST" name="closeTheDB" finished-at="2022-06-23T17:24:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheDB -->
-      </class> <!-- com.crm.createproduct.CreateProductAndVerifyTest -->
+      </class> <!-- com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

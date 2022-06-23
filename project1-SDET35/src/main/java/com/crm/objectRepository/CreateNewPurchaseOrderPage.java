@@ -109,6 +109,8 @@ public class CreateNewPurchaseOrderPage extends WebdriverUtility{
 	}
 	
 	public void enterItemNameQtyAndListPrice(WebDriver driver, String proName, String proQty, String proListPrice, String c1Window, String p1Window) {
+		WebdriverUtility wUtil=new WebdriverUtility();
+		wUtil.waitForElementToBeClickable(driver, productNameLkUpImg);
 		productNameLkUpImg.click();
 		switchToWindow(driver, c1Window);
 		productNameTxtedit.sendKeys(proName);
