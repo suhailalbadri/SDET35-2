@@ -107,12 +107,12 @@ public class CreateNewPurchaseOrderPage extends WebdriverUtility{
 	}
 	
 	public void enterItemNameQtyAndListPrice(WebDriver driver, String proName, String proQty, String proListPrice, String c1Window, String p1Window) {
-		productNameLkUpImg.click();
-		switchToWindow(driver, c1Window);
-		productNameTxtedit.sendKeys(proName);
-		productNameSearchBtn.click();
-		productNameSelect.click();
-		switchToWindow(driver, p1Window);
+		//productNameLkUpImg.click();
+		//switchToWindow(driver, c1Window);
+		//productNameTxtedit.sendKeys(proName);
+		//productNameSearchBtn.click();
+		//productNameSelect.click();
+		//switchToWindow(driver, p1Window);
 		productQtyTxtEdit.sendKeys(proQty);
 		productLstPriceTxtEdit.clear();
 		productLstPriceTxtEdit.sendKeys(proListPrice);
