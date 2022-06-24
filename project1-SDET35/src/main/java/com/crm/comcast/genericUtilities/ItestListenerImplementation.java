@@ -65,7 +65,7 @@ public class ItestListenerImplementation implements ITestListener{
 	public void onStart(ITestContext context) {
 		ExtentSparkReporter spark=new ExtentSparkReporter("./ExtentReports/report.html");
 		
-		spark.config().setTheme(Theme.DARK);
+		spark.config().setTheme(Theme.STANDARD);
 		spark.config().setReportName("FrameworkExtentReport");
 		spark.config().setDocumentTitle("Suhail's document");
 		
