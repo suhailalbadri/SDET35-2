@@ -44,9 +44,9 @@ public class BaseClass {
 	@BeforeClass(groups={"smokeTest", "regressionTest"})
 	public void launchTheBrowser() throws Throwable
 	{
-		String BROW=System.getProperty("browser");
+		//String BROW=System.getProperty("browser");
 		//String URL=System.getProperty("url");
-		//String BROW = fUtil.getPropertyKeyValue("browser");
+		String BROW = fUtil.getPropertyKeyValue("browser");
 		String URL = fUtil.getPropertyKeyValue("url");
 
 		if (BROW.equalsIgnoreCase("chrome")) 

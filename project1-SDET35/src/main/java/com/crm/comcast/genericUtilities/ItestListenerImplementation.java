@@ -1,12 +1,5 @@
 package com.crm.comcast.genericUtilities;
 
-import java.io.File;
-
-import javax.xml.xpath.XPathEvaluationResult.XPathResultType;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

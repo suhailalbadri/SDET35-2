@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest">
+      <class name="com.crm.createcontact.CreateContactAndVerifyTest">
         <methods>
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
           <include name="loginToApplication"/>
-          <include name="createPurchaseOrderWithItemQtyListPriceTest"/>
+          <include name="createContactAndVerifyTest"/>
           <include name="closeTheDB"/>
           <include name="closeTheBrowser"/>
           <include name="signoutFromApplication"/>
         </methods>
-      </class> <!-- com.crm.purchaseorder.CreatePurchaseOrderWithItemQtyListPriceTest -->
+      </class> <!-- com.crm.createcontact.CreateContactAndVerifyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
