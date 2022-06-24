@@ -1,6 +1,7 @@
 package com.crm.createcontact;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.genericUtilities.BaseClass;
@@ -8,7 +9,7 @@ import com.crm.objectRepository.ContactInformationPage;
 import com.crm.objectRepository.ContactsPage;
 import com.crm.objectRepository.CreateNewContactPage;
 import com.crm.objectRepository.HomePage;
-//@Listeners(com.crm.comcast.genericUtilities.ItestListenerImplementation.class)
+@Listeners(com.crm.comcast.genericUtilities.ItestListenerImplementation.class)
 public class CreateContactAndVerifyTest extends BaseClass{
 	@Test(groups={"smokeTest"})
 	public void createContactAndVerifyTest() throws Throwable {
