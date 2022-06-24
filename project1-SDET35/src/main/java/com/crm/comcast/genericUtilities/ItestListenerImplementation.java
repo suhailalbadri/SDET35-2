@@ -2,6 +2,8 @@ package com.crm.comcast.genericUtilities;
 
 import java.io.File;
 
+import javax.xml.xpath.XPathEvaluationResult.XPathResultType;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -9,33 +11,52 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 public class ItestListenerImplementation implements ITestListener{
 
+	ExtentReports report;
+	ExtentTest test;
+	
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+		test=report.createTest(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-
+		test.log(Status.PASS, result.getMethod().getMethodName());
+		test.log(Status.PASS, result.getThrowable());
 	}
 
 	public void onTestFailure(ITestResult result) {
-		String testName=result.getMethod().getMethodName();
-		System.out.println(testName+" =====Executing===== ");
+		test.log(Status.FAIL, result.getMethod().getMethodName());
+		test.log(Status.FAIL, result.getThrowable());
 		
-		EventFiringWebDriver edriver=new EventFiringWebDriver(BaseClass.sdriver);
-		File src=edriver.getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(src, new File("./Screenshots/"+testName+".png"));
-		} catch (Exception e) {
+			String screenShotName = WebdriverUtility.takeScreenShot(BaseClass.sdriver,result.getMethod().getMethodName());
+			test.addScreenCaptureFromPath(screenShotName);
+		} catch (Throwable e) {
 			e.printStackTrace();
 		}
+		
+//		String testName=result.getMethod().getMethodName();
+//		System.out.println(testName+" =====Executing===== ");
+//		
+//		EventFiringWebDriver edriver=new EventFiringWebDriver(BaseClass.sdriver);
+//		File src=edriver.getScreenshotAs(OutputType.FILE);
+//		try {
+//			FileUtils.copyFile(src, new File("./Screenshots/"+testName+".png"));
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-
+		test.log(Status.SKIP, result.getMethod().getMethodName());
+		test.log(Status.SKIP, result.getThrowable());
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -49,13 +70,25 @@ public class ItestListenerImplementation implements ITestListener{
 	}
 
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-
+		ExtentSparkReporter spark=new ExtentSparkReporter("./ExtentReports/report.html");
+		
+		spark.config().setTheme(Theme.DARK);
+		spark.config().setReportName("FrameworkExtentReport");
+		spark.config().setDocumentTitle("Suhail's document");
+		
+		report=new ExtentReports();
+		report.attachReporter(spark);
+		report.setSystemInfo("Created By: ", "Suhail");
+		report.setSystemInfo("Reviewed By: ", "Sanjay");
+		report.setSystemInfo("Approved By: ", "Deepak");
+		report.setSystemInfo("Platform: ", "Windows 11");
+		report.setSystemInfo("Srever Name: ", "Apache TomCat");
+		
 	}
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-
+		report.flush();
 	}
 	
 }
